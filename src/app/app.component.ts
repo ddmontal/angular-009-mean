@@ -1,17 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { SettingsService } from './services/service.index';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'angular-adminpro';
 
-  constructor(private router: Router){}
-
-  ngOnInit() {
-      console.log('configured routes: ', this.router.config);
-  }
+  // tslint:disable-next-line: variable-name
+  constructor(public _ajustes: SettingsService) {}
 }
