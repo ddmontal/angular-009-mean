@@ -13,6 +13,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { ChartsModule } from 'ng2-charts';
 import { GraficoDoughnutComponent } from '../components/grafico-doughnut/grafico-doughnut.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     PagesComponent,
     IncrementadorComponent,
     GraficoDoughnutComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
   imports: [SharedModule, PagesRoutingModule, FormsModule, ChartsModule]
