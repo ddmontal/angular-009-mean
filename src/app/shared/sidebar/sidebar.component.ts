@@ -7,6 +7,7 @@ import { SidebarService } from '../../services/service.index';
   styles: []
 })
 export class SidebarComponent implements OnInit {
+  // tslint:disable-next-line: variable-name
   constructor(public _sidebar: SidebarService) {}
 
   ngOnInit() {}
